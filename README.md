@@ -1,7 +1,7 @@
 # AKS.Graylog
 
 ## Nginx Ingress Controller
-** Add Helm repository **
+**Add Helm repository**
 ```shell
 helm repo add ingress-nginx <https://kubernetes.github.io/ingress-nginx>
 ```
@@ -13,7 +13,7 @@ helm install ingress-nginx ingress-nginx/ingress-nginx --version 4.7.1 -f nginx-
 ```shell
 kubectl apply -f routes.yaml -n graylog
 ```
-** Set up Load Balancer **
+**Set up Load Balancer**
 ***Get node resource group of the cluster***
 ```shell
 az aks show --name <aks\_name> --resource-group <aks-resource-group> --query nodeResourceGroup -o tsv
@@ -34,7 +34,7 @@ RG\_SCOPE=$(az group show --name <cluster-resource-group> --query id -o tsv)
 ```shell
 az role assignment create --assignee <client\_id> --role "Network Contributor" --scope /subscriptions/<subscription\_id>/resourceGroups/<cluster-resource-group>
 ```
-***To delete***
+**To delete**
 ```shell
 helm uninstall ingress-nginx -n graylog
 ```
