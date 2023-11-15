@@ -24,11 +24,11 @@ az network public-ip create --resource-group <cluster-resource-group> --name Gra
 ```
 ***Get Client ID of AKS cluster***
 ```shell
-$(az aks show --name <aks_name> --resource-group <aks_resource_group> --query identity.principalId -o tsv)
+az aks show --name <aks_name> --resource-group <aks_resource_group> --query identity.principalId -o tsv
 ```
 ***Get resource group of the cluster***
 ```shell
-$(az group show --name <cluster-resource-group> --query id -o tsv)
+az group show --name <cluster-resource-group> --query id -o tsv
 ```
 ***Create role assignment***
 ```shell
