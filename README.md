@@ -13,6 +13,6 @@ Before using this repository you should have an existing AKS cluster.
 
 You can deploy these resources in any order, except Graylog. Graylog have to be the last deployed item, because it uses some configuration from previously deployed resources:
 
-*GRAYLOG_MONGODB_URI
-*GRAYLOG_ELASTICSEARCH_HOSTS
-*External IP of the Load Balancer
+* GRAYLOG_MONGODB_URI
+* GRAYLOG_ELASTICSEARCH_HOSTS
+* External IP of the Load Balancer
