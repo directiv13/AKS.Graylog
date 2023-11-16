@@ -1,0 +1,8 @@
+controller:
+  replicaCount: 1
+  ingressClassName: "nginx"
+  service:
+    annotations:
+      service.beta.kubernetes.io/azure-load-balancer-health-probe-request-path : /healthz
+      service.beta.kubernetes.io/azure-load-balancer-resource-group: MC_rg-poc_inphiz-aks-poc_westeurope
+      service.beta.kubernetes.io/azure-pip-name: GraylogInphizIP
