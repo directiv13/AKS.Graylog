@@ -16,3 +16,12 @@ You can deploy these resources in any order, except Graylog. Graylog have to be 
 * GRAYLOG_MONGODB_URI
 * GRAYLOG_ELASTICSEARCH_HOSTS
 * External IP of the Load Balancer
+
+### Result
+
+In result you will get cluster that contains:
+
+* 1 Nginx Ingress Controller
+* 2 Graylog nodes
+* 2 Elasticsearch nodes
+* 2 MongoDB nodes in Replica Set
