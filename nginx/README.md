@@ -7,7 +7,7 @@ az aks show --name <aks_name> --resource-group <aks-resource-group> --query node
 ```
 ***Create a public IP***
 ```shell
-az network public-ip create --resource-group <cluster-resource-group> --name GraylogInphizIP --sku Standard --allocation-method static
+az network public-ip create --resource-group <cluster-resource-group> --name <public-ip-name> --sku Standard --allocation-method static
 ```
 ***Get a Client ID of AKS cluster***
 ```shell
