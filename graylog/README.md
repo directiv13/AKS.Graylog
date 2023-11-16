@@ -5,6 +5,7 @@ There are two nodes in the cluster: 1 master node and 1 slave node. If you want,
 kubectl create -f . -n graylog
 ```
 **Check logs**
+
 _Master_
 ```shell
 kubectl logs graylog-master-0 -n graylog -c graylog-master
