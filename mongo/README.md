@@ -39,7 +39,7 @@ rs.status()
 ### Test
 **Connect to a new MongoDB instance**
 ```shell
-kubectl run mongo --rm -it --image mongo -- sh
+kubectl run mongo --rm -it --image mongo --sh
 ```
 **Connect to the created replica set**
 ```shell
